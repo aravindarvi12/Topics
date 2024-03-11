@@ -80,3 +80,58 @@ const mapped_Arr = mrf_arr.map((value, index, accArr) => {
   console.log("mrf guvi array", mrf_arr);
   console.log("Guvi arrayaravind", guviMapped);
   console.log("Hello world")
+  
+  //Filters
+console.log("-----------Filters---------")
+const filter_Arr= mrf_arr.filter((val, index, accArr) =>{
+  console.log(`
+  Value : ${val}
+  index : ${index}
+  accArr : ${accArr}
+  `);
+  return val !=4;//boolean
+
+});
+console.log(mrf_arr);
+console.log(filter_Arr);
+
+//polyfill for filter
+
+Array.prototype.guvifilter = function (fn) {
+  let newArr = [];
+  for (let i =0; i< this.length; i++){
+    if(fn(this[i], this)){
+      newArr.push(this[i]);
+    }
+  }
+  return newArr;
+};
+
+console.log("-------guvi filter-------")
+const guvifilter_Arr = mrf_arr.guvifilter((val, index, accArr) =>{
+  console.log(`
+  Value : ${val}
+  Index: ${index}
+  accArr: ${accArr}
+  `);
+  return val !=4; //boolean
+});
+console.log(mrf_arr);
+console.log(guvifilter_Arr);
+
+consolg.log("----------Reduce-----------")
+const reducedvalue = mrf_arr.reduce((acc, val, index, accArr) => {
+  console.log(`
+  value: ${val}
+  index: ${index}
+  accArr: ${accArr}
+  `);
+  acc.value = acc.value + val;
+  acc.length = index +1;
+  return acc;
+}
+{value:0, length:0}
+);
+
+//Polyfill for accumlator
+
