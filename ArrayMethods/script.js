@@ -129,7 +129,7 @@ const reducedvalue = mrf_arr.reduce((acc, val, index, accArr) => {
   acc.value = acc.value + val;
   acc.length = index +1;
   return acc;
-}
+
 {value:0, length:0}
 );
 
