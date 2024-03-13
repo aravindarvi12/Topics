@@ -1,0 +1,80 @@
+h1 {
+    color:orange ;
+}
+/*List property*/
+ul{
+    list-style-type: square;
+    /*list style: circle inside url("./mini_emoji.png");*/
+}
+/*Font Property*/
+P{
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+/*Text property*/
+p{
+    text-align: center;
+    text-transform: uppercase ;
+    text-decoration: underline;
+    line-height: 2;
+    letter-spacing: 1px;
+
+}
+
+/*Broder property*/
+p{
+    /*border-width border-style border-color*/
+    border:10px solid palegreen;
+    border-radius:5px;
+}
+span
+{ 
+    background-color: red;
+}
+
+.bg-red {
+background-color: red;
+}
+.text-light{
+    color:white;
+}
+
+#text-it{
+    font-style: italic;
+}
+#text-small{
+    font-size: small;
+    color: black;
+}
+
+.container{
+    border:10px solid darkblue
+}
+
+.block{
+    display: inline;
+    background-color: red;
+    margin: 2px;
+    /* width : 7px;
+    height:20px ; wont work in Inline element */
+    text-align: center;
+}
+
+.inline{
+    display:block;
+    background-color: red;
+    margin: 5px;
+    text-align: center;
+    width: 70px;
+    height: 20px;
+}
+.block-inline{
+    display: inline-block;
+    background-color: red;
+    margin: 10px;
+    width: 70px;
+    height: 20px;
+    text-align: center;
+
+}
