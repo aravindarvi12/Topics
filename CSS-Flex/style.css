@@ -1,0 +1,37 @@
+.main-container{
+    display: flex;
+    gap: 0.5rem;
+    /*flex: wrap;
+    flex-direction: row; */
+    flex-flow: row wrap;
+   /* justify-content: x-axis;*/
+   /*  justify-content: center;*/
+   /*justify-content: space-around;*/
+   /*justify-content: space-between;*/
+   /*justify-content: space-evenly;*/
+   /*justify-content: end;*/
+   /*justify-content: start;*/
+   /*wrap - align-content: nowrap - align-items: ;*/
+    /* y-axis */
+  /* align-content: center; */
+  /* align-content: space-around; */
+  /* align-content: space-evenly; */
+  /* align-content: flex-start; */
+  /* align-content: flex-end; */
+align-content: center;
+/*align-items: stretch; */
+    
+border: 2px solid black;
+margin: auto;
+padding: 5px;
+height: 500px;
+}
+.box{
+    background-color: red;
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
